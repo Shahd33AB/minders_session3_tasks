@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project/task3.dart';
+import 'package:project/contacts.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Task3(),
+      home: Contacts(),
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
     );
   }
 }
